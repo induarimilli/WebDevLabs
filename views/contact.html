@@ -4,7 +4,7 @@
     <meta name="author" content="Your name">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Your name professional website">
-    <title>Your Name - CV</title>
+    <title>Your Name - Contact</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,12 +47,32 @@
             color: #0044cc;
         }
 
-        table {
+        form input, form textarea {
             width: 80%;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #0044cc;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #002b80;
+        }
+
+        table {
             margin: 20px auto;
+            width: 50%;
             border-collapse: collapse;
-            border-radius: 10px;
-            overflow: hidden;
+            border: 1px solid #ddd;
         }
 
         th, td {
@@ -65,10 +85,6 @@
             color: white;
         }
 
-        tr:nth-child(even) {
-            background: #f2f2f2;
-        }
-
         footer {
             background: #0044cc;
             color: white;
@@ -76,15 +92,6 @@
             position: relative;
             bottom: 0;
             width: 100%;
-        }
-
-        a {
-            color: #0044cc;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #002b80;
         }
     </style>
 </head>
@@ -100,20 +107,28 @@
     </header>
 
     <div class="main">
-        <h2>Curriculum Vitae</h2>
-        
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+
         <table>
             <tr>
-                <th>Name</th>
-                <th>Description</th>
+                <th>Contact Method</th>
+                <th>Details</th>
             </tr>
             <tr>
-                <td>Your Name</td>
-                <td>Information Systems Student at CMU</td>
+                <td>Email</td>
+                <td>your.email@cmu.edu</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>(123) 456-7890</td>
             </tr>
         </table>
-    
-        <p><a href="../static/resume.pdf" target="_blank">📄 View My Resume</a></p>
     </div>
 
     <footer>
