@@ -4,7 +4,7 @@
     <meta name="author" content="Indu Arimilli">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Indu Arimilli professional website">
-    <title>Indu Arimilli - Fun</title>
+    <title>Indu Arimilli - Contact</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,10 +47,54 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        h2 {
+            color: #9340e7;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #9340e7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #3c0080;
+        }
+
+        table {
+            margin: 20px auto;
+            width: 50%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #9340e7;
+            color: white;
+        }
+
         footer {
             background: #9340e7;
             color: white;
             padding: 10px;
+            position: relative;
+            bottom: 0;
             width: 100%;
         }
     </style>
@@ -67,13 +111,28 @@
     </header>
 
     <div class="main">
-        <h2>Things I love to do for fun</h2>
-        <ul>
-            <li>Playing video games</li>
-            <li>Hiking</li>
-            <li>Cooking</li>
-            <li>Traveling</li>
-        </ul>
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+
+        <table>
+            <tr>
+                <th>Contact Method</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>email@cmu.edu</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>(123) 456-7890</td>
+            </tr>
+        </table>
     </div>
 
     <footer>

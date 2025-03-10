@@ -4,7 +4,7 @@
     <meta name="author" content="Indu Arimilli">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Indu Arimilli professional website">
-    <title>Indu Arimilli - Fun</title>
+    <title>Indu Arimilli - CV</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,11 +47,48 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        h2 {
+            color: #9340e7;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #9340e7;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
         footer {
             background: #9340e7;
             color: white;
             padding: 10px;
+            position: relative;
+            bottom: 0;
             width: 100%;
+        }
+
+        a {
+            color: #9340e7;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #49026a;
         }
     </style>
 </head>
@@ -67,13 +104,20 @@
     </header>
 
     <div class="main">
-        <h2>Things I love to do for fun</h2>
-        <ul>
-            <li>Playing video games</li>
-            <li>Hiking</li>
-            <li>Cooking</li>
-            <li>Traveling</li>
-        </ul>
+        <h2>Curriculum Vitae</h2>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Arimilli</td>
+                <td>Information Systems Student at CMU</td>
+            </tr>
+        </table>
+    
+        <p><a href="../static/resume.pdf" target="_blank">📄 View My Resume</a></p>
     </div>
 
     <footer>
