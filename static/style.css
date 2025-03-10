@@ -1,0 +1,80 @@
+/* Universal Styling */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #f0f8ff, #dfe9f3);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+#main-header { 
+    background: #9340e7;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Name Styling */
+#webname {
+    background-color: #9ba095;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+.main {
+    background: white;
+    margin: 40px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h2 {
+    color: #9340e7;
+}
+
+/* Profile Image Styling */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+    background: #9340e7;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
