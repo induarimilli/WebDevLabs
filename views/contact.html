@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Indu Arimilli">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Indu Arimilli professional website">
     <title>Indu Arimilli - Contact</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/script.js"></script>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,7 +103,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="addYear()">
     <header id="main-header">
         <h1>Indu Arimilli</h1>
         <nav>
@@ -112,12 +116,14 @@
 
     <div class="main">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required><br>
-            <input type="email" placeholder="Your Email" required><br>
-            <textarea placeholder="Your Message" required></textarea><br>
+        <form id="contactForm" onsubmit="return validate()">
+            <input type="text" id="UserName" placeholder="Your Name" required><br>
+            <input type="email" id="UserEmail" placeholder="Your Email" required><br>
+            <textarea id="UserText" placeholder="Your Message" required></textarea><br>
             <button type="submit">Send</button>
+            <p id="ValidateMsg" style="color: red; display: none;"></p>
         </form>
+        
 
         <table>
             <tr>
@@ -136,7 +142,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Indu Arimilli</p>
+        <p id="copyYear"></p>
     </footer>
 </body>
 </html>
