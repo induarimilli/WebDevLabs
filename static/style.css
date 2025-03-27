@@ -1,80 +1,123 @@
-/* Universal Styling */
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    font-variation-settings: "wdth" 100;
     padding: 5px;
     margin: 5px;
 }
 
-/* Body Styling */
-body {
-    background: linear-gradient(to right, #f0f8ff, #dfe9f3);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* Header Styling */
-#main-header { 
-    background: #9340e7;
+header {
     color: white;
-    padding: 15px;
-    font-size: 24px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Name Styling */
 #webname {
-    background-color: #9ba095;
-    padding: 10px;
-    text-align: center;
+    background-color: #92ad70;
 }
 
-/* Navigation Styling */
 nav a {
     text-decoration: none;
-    color: white;
     margin-right: 15px;
-    font-size: 18px;
-    font-weight: bold;
+    color: #92ad70;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content Styling */
-.main {
-    background: white;
-    margin: 40px auto;
-    padding: 20px;
-    width: 60%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Heading Styling */
-h2 {
-    color: #9340e7;
-}
-
-/* Profile Image Styling */
-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer Styling */
-footer {
-    background: #9340e7;
+th {
+    padding: 12px;
+    background-color: darkgray;
     color: white;
+    width: fit-content;
+}
+
+table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #92ad70;
+    color: white;
+    border: none;
     padding: 10px;
-    position: relative;
-    bottom: 0;
+    border-radius: 5px;
+}
+
+#FavList {
+    display: none;
+}
+
+#SeeMoreBTN {
+    background-color: lightgrey;
+    border: 0px;
+    border-radius: 16px;
+    font-size: large;
+}
+
+#shortIntro {
+    display: block;
+}
+
+#readLess, #longIntro {
+    display: none;
+}
+
+#readLess, #readMore {
+    font-style: italic;
+    background-color: lightgrey;
+}
+
+#ValidateMsg {
+    width: max-content;
+    margin: auto;
+}
+
+/* Flexbox Layout */
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item1, .item2, .item3, .item4 {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Styling for container in item4 */
+.container {
+    border-radius: 10%;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Fun Image */
+.funIMG {
+    border-radius: 100%;
     width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Button Styling */
+button {
+    background-color: #92ad70;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a9e5a;
 }
